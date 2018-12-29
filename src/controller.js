@@ -11,6 +11,11 @@ module.exports = {
         const testJson = await model.getTest();
         
         res.set('Content-Type', 'application/json');
+        
+        console.clear();
+        console.log('JSON data sent...');
+        console.log(testJson);
+        
         res.send(testJson);
         res.end();
     }
