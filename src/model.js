@@ -2,29 +2,29 @@ const request = require('request');
 
 const mock = [
     {
-        "id": "ds76s-ds78sd7-gf8f7",
+        "id": "1",
         "type": "Unit",
         "units": [
             {
-                "id": "ds76f-ds76fsd-ds7f6sd8f",
+                "id": "2",
                 "type": "TextField"
             },
             {
-                "id": "sd8ds8-75ds7ds8sd-5sd78ds",
+                "id": "3",
                 "type": "Unit",
                 "units": [
                     {
-                        "id": "df78df-76df78d-f687df",
+                        "id": "4",
                         "type": "TextField"
                     }
                 ]
             },
             {
-                "id": "ds76sd-sd76sd-7df87f",
+                "id": "5",
                 "type": "Text"
             },
             {
-                "id": "7sd5-78sd678-78s6d",
+                "id": "6",
                 "options": {
                 "titel": "Lustiges Video",
                 "description": "Ein cooles lustiges Video mit einem Hasen.",
