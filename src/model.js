@@ -2,22 +2,19 @@ const request = require('request');
 
 const mock = [
     {
-        "id": "1",
-        "type": "text",
-        "options": {
+        "params": {
             "text": "Neuronale Netze sind irgendwie total krass."
         },
         "units": [
             {
-                "id": "2",
                 "type": "muh"
             },
             {
                 "id": "3",
-                "options": {
+                "params": {
                     "titel": "Lustiges Video",
                     "description": "Ein cooles lustiges Video mit einem Hasen.",
-                    "path": "https://www.w3schools.com/html/mov_bbb.mp4",
+                    "url": "https://www.w3schools.com/html/mov_bbb.mp4",
                     "resolution": "320x240",
                     "runtime": "10.26s",
                     "size": "131.509.108",
@@ -32,7 +29,7 @@ const mock = [
                     {
                         "id": "5",
                         "type": "text",
-                        "options": {
+                        "params": {
                             "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                         }
                     }
@@ -41,7 +38,7 @@ const mock = [
             {
                 "id": "6",
                 "type": "text",
-                "options": {
+                "params": {
                     "text": "Die sist ein kleiner Text."
                 }
             }
