@@ -3,7 +3,8 @@ const request = require('request');
 const mock = [
     {
         "params": {
-            "text": "Neuronale Netze sind irgendwie total krass."
+            "text": "Neuronale Netze sind irgendwie total krass.",
+            "xxx": "Unknown Param"
         },
         "units": [
             {
