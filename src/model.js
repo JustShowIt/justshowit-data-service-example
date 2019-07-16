@@ -1,4 +1,4 @@
-const request = require('request');
+// const request = require('request');
 
 const mock = [
     {
@@ -24,9 +24,9 @@ const mock = [
                 }
             },
             {
-                "id": "4",
-                "type": "unit",
-                "units": [
+                "_jsi_id": "4",
+                "_jsi_type": "unit",
+                "_jsi_units": [
                     {
                         "id": "5",
                         "type": "text",
@@ -47,11 +47,24 @@ const mock = [
     }
 ];
 
+const unspecifiedDataMock = {
+    "muh": "5",
+    "type": "text",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
+    "bla": [
+        {
+            "cow": "sdfn sbdufdssdfdsfdfdsa sdf sdg dsf gfsdf"
+        }
+    ],
+    "foo": {},
+    "path": "http://................/test.html"
+};
+
 
 module.exports = {
     getTest (req) {
         return new Promise((resolve/*, rejected*/) => {
-            resolve(mock[0]);
+            resolve(unspecifiedDataMock);
         });
     }
 }
