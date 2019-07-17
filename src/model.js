@@ -54,7 +54,9 @@ const unspecifiedDataMock = {
     "bla": [
         {
             "cow": "sdfn sbdufdssdfdsfdfdsa sdf sdg dsf gfsdf"
-        }
+        },
+        "sdfsdf sdf sd",
+        []
     ],
     "foo": {},
     "path": "http://................/test.html"
