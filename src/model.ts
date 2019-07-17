@@ -48,7 +48,7 @@ const mock = [
 ];
 
 const unspecifiedDataMock = {
-    "muh": "5",
+    "muh": "222",
     "type": "text",
     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
     "bla": [
@@ -61,8 +61,8 @@ const unspecifiedDataMock = {
 };
 
 
-module.exports = {
-    getTest (req) {
+export default {
+    getTest (/*req*/) {
         return new Promise((resolve/*, rejected*/) => {
             resolve(unspecifiedDataMock);
         });

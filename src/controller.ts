@@ -1,11 +1,6 @@
-const model = require('./model');
-const ServiceConfig = require('./service-config.js');
-const request = require('request-promise');
-const fs = require('fs');
-const path = require('path');
+import model from './model';
 
-module.exports = {
-    
+export default {
     async getTestJson (req, res) {
 
         console.clear();

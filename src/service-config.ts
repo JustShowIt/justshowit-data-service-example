@@ -1,4 +1,4 @@
-var packageJson = require('./../package.json');
+import packageJson from '../package.json';
 
 const config = {
     name: packageJson.name,
@@ -7,4 +7,4 @@ const config = {
     justshowitUiBaseApplicationPath: 'node_modules/justshowit-ui-base-application/dist/'
 }
 
-module.exports = config;
+export default config;
