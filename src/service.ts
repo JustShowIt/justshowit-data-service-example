@@ -8,5 +8,5 @@ app.use(express.static(ServiceConfig.justshowitUiBaseApplicationPath));
 router(app);
 
 app.listen(ServiceConfig.port, function () {
-  console.log('Service is listening to http://localhost:' + ServiceConfig.port);
+  console.log('Microservice "' + ServiceConfig.name + '" is listening to http://localhost:' + ServiceConfig.port);
 });
