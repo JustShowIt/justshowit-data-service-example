@@ -60,11 +60,24 @@ const unspecifiedDataMock = {
     "path": "http://................/test.html"
 };
 
+const unspecifiedDataMock2 = [
+    "Muh sagt die Kuh",
+    "http://www.google.de",
+    [
+        "Die Kuh"
+    ],
+    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
+    {
+        "test": 123
+    },
+    "http://www.gmx.de"
+];
+
 
 export default {
     getTest (/*req*/) {
         return new Promise((resolve/*, rejected*/) => {
-            resolve(unspecifiedDataMock);
+            resolve(unspecifiedDataMock2);
         });
     }
 }
