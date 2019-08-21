@@ -47,20 +47,32 @@ const mock = [
     }
 ];
 
-const unspecifiedDataMock = {
-    "muh": "222",
-    "type": "text",
-    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
-    "bla": [
+const unspecifiedDataObjectMock = {
+    "type": "test",
+    "muh": "Die Muh ist eine kleine Kuh",
+    "kuh": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
+    "irgendwas": [
         {
-            "cow": "sdfn sbdufdssdfdsfdfdsa sdf sdg dsf gfsdf"
+            "cow": "Kühe Kühe Kühe"
+        },
+        [],
+        {
+            "jo": "http://www.google.de",
+            "klaro": "Irgend ein komischer kleiner Text"
         }
     ],
     "foo": {},
-    "path": "http://................/test.html"
+    "bar": "http://................/test.html"
 };
 
-const unspecifiedDataMock2 = [
+const unspecifiedSimpleDataObjectMock = {
+    "type": "test",
+    "muh": "Die Muh ist eine kleine Kuh",
+    "kuh": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
+    "bar": "http://................/test.html"
+};
+
+const unspecifiedDataArrayMock = [
     "Muh sagt die Kuh",
     "http://www.google.de",
     [
@@ -77,7 +89,7 @@ const unspecifiedDataMock2 = [
 export default {
     getTest (/*req*/) {
         return new Promise((resolve/*, rejected*/) => {
-            resolve(unspecifiedDataMock2);
+            resolve(unspecifiedSimpleDataObjectMock);
         });
     }
 }
