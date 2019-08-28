@@ -11,6 +11,20 @@ const mock = [
                 "type": "muh"
             },
             {
+                "muh": "5",
+                "fdfd": "tgdnzhfnjzhf",
+                "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
+                "bla": [
+                    {
+                        "cow": "sdfn sbdufdssdfdsfdfdsa sdf sdg dsf gfsdf"
+                    },
+                    "sdfsdf sdf sd",
+                    []
+                ],
+                "foo": {},
+                "path": "http://................/test.html"
+            },
+            {
                 "id": "3",
                 "params": {
                     "titel": "Lustiges Video",
@@ -49,7 +63,16 @@ const mock = [
 
 const unspecifiedDataMock = {
     "muh": "5",
-    "type": "text",
+    "type": "tgdnzhfnjzhf",
+    "units": [
+        {
+            "test1": "Test Nummer 1"
+        },
+        "Test Nummer 2",
+        {
+            "test3": "Test Nummer 3"
+        }
+    ],
     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
     "bla": [
         {
@@ -60,6 +83,13 @@ const unspecifiedDataMock = {
     ],
     "foo": {},
     "path": "http://................/test.html"
+};
+
+const unspecifiedDataMockTEST = {
+    "text": "5",
+    "text": "tgdnzhfnjzhf",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
+    "url": "http://................/test.html"
 };
 
 
