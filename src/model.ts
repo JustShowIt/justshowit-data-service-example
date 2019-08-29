@@ -89,7 +89,7 @@ const unspecifiedDataArrayMock = [
 export default {
     getTest (/*req*/) {
         return new Promise((resolve/*, rejected*/) => {
-            resolve(unspecifiedSimpleDataObjectMock);
+            resolve(unspecifiedDataObjectMock);
         });
     }
 }
