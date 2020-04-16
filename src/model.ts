@@ -1,5 +1,3 @@
-// const request = require('request');
-
 const mock = [
     {
         "params": {
@@ -48,8 +46,8 @@ const mock = [
 ];
 
 const unspecifiedDataObjectMock = {
-    "type": "test",
-    "muh": "Die Muh ist eine kleine Kuh",
+    "type": "muh",
+    "muh": "Die eine Muh ist eine kleine Kuh",
     "kuh": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
     "irgendwas": [
         {
@@ -87,9 +85,7 @@ const unspecifiedDataArrayMock = [
 
 
 export default {
-    getTest (/*req*/) {
-        return new Promise((resolve/*, rejected*/) => {
-            resolve(unspecifiedDataObjectMock);
-        });
+    getTest () {
+        return Promise.resolve(unspecifiedDataObjectMock);
     }
 }
