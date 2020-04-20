@@ -83,7 +83,6 @@ const unspecifiedDataArrayMock = [
     "http://www.gmx.de"
 ];
 
-
 export default {
     getTest () {
         return Promise.resolve(unspecifiedDataObjectMock);
